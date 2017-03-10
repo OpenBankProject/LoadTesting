@@ -55,7 +55,7 @@ https://artillery.io/docs/gettingstarted.html#reading-the-output.
 
 It is also possible to generate a graphical report using the following command:
 
-    artillery report artillery report artillery_report_20170309_124264.json
+    artillery report artillery_report_20170309_124264.json
     
 Here you should replace the file name with the one the test generated for you.
 
