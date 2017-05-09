@@ -1,0 +1,16 @@
+config:
+  target: 'https://socgen2-k-api.openbankproject.com'
+  phases:
+    -
+      duration: 60
+      arrivalRate: 10
+
+  defaults:
+    headers:
+      Authorization: 'DirectLogin token="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyIiOiIifQ.xf8ohKc5zU3H5h4ytMAmNoav0BGPSWMt6e4hjo5tync"'
+
+scenarios:
+  - flow:
+    - get:
+        url: "/obp/v2.1.0/banks/00100/accounts/410ad4eb-9f63-300f-8cb9-12f0ab677521/owner/transactions"
+

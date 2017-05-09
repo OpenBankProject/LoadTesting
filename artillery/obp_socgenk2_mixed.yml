@@ -1,0 +1,56 @@
+config:
+  target: 'https://socgen2-k-api.openbankproject.com'
+  phases:
+    -
+      duration: 60
+      arrivalRate: 1
+      rampTo: 10
+    -
+      duration: 60
+      arrivalCount: 20
+    -
+      duration: 60
+      arrivalRate: 1
+      rampTo: 10
+    -
+      duration: 60
+      arrivalCount: 5
+    -
+      duration: 60
+      arrivalCount: 5
+    -
+      duration: 60
+      arrivalCount: 5
+    -
+      duration: 60
+      arrivalCount: 5
+    -
+      duration: 60
+      arrivalCount: 5
+
+
+  defaults:
+    headers:
+      Authorization: 'DirectLogin token="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyIiOiIifQ.i1ShR3cpA78kKuBeIAOoRfACI2g4SIwbe8IMMkOALN0"'
+
+scenarios:
+  - flow:
+    - get:
+        url: "/obp/v2.1.0/banks/00100"
+    - get:
+        url: "/obp/v2.1.0/banks/00100/accounts/df88925b-4a7f-31f6-a077-3dcbd60b669f/owner/account"
+    - get:
+        url: "/obp/v2.1.0/banks"
+    - get:
+        url: "/obp/v2.1.0/banks/00100/accounts/1f5587fa-8ad8-3c6b-8fac-ac3db5bdc3db/owner/transactions"
+    - get:
+        url: "/obp/v2.1.0/banks/00100/accounts/1f5587fa-8ad8-3c6b-8fac-ac3db5bdc3db/owner/account"
+    - get:
+        url: "/obp/v2.1.0/banks/00100/accounts/410ad4eb-9f63-300f-8cb9-12f0ab677521/owner/transactions"
+    - get:
+        url: "/obp/v2.1.0/banks/00100/accounts/410ad4eb-9f63-300f-8cb9-12f0ab677521/owner/account"
+    - get:
+        url: "/obp/v2.1.0/banks/00100/accounts/df88925b-4a7f-31f6-a077-3dcbd60b669f/owner/transactions"
+
+
+
