@@ -2,9 +2,9 @@
 
 Load testing scripts to run against Open Bank Project
 
-## Tool
+## Tools
 
-Artillery (https://artillery.io) is used for the load testing.
+Artillery (https://artillery.io) and Apache Jmeter (http://jmeter.apache.org/) are used for the load testing.
 
 ## Using Artillery
 
