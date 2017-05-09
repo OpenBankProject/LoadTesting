@@ -61,6 +61,8 @@ Here you should replace the file name with the one the test generated for you.
 
 This will generate an html file of the report and display it on your default web browser.
 
+## Apache Jmeter
 
+To run the load tests using Apache Jmeter, open the test plans from the jmeter directory uing Apache Jmeter and run.
 
 
